@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/students', function () {
+    return view('boolean.studenti');
+});
+
+Route::get('/teachers', function () {
+    return view('boolean.insegnanti');
+});
+
+Route::get('/lesson', function () {
+    return view('boolean.lezioni');
 });
